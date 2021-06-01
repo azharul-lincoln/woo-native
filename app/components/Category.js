@@ -6,16 +6,15 @@ import {
   Image,
   View,
   Dimensions,
+  TouchableOpacity,
 } from "react-native";
 
 function Category({ title, imageSrc, id }) {
   return (
-    // <TouchableWithoutFeedback>
-    <View style={styles.item}>
+    <TouchableOpacity style={styles.item}>
       {imageSrc && <Image style={styles.image} source={{ uri: imageSrc }} />}
       <Text style={styles.title}>{title}</Text>
-    </View>
-    // </TouchableWithoutFeedback>
+    </TouchableOpacity>
   );
 }
 
