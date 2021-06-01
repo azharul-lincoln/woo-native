@@ -8,12 +8,21 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@woocommerce/woocommerce-rest-api": "^1.0.1",
+    "axios": "^0.19.2",
+    "bluebird": "^3.5.5",
+    "create-hmac": "^1.1.7",
+    "crypto": "^1.0.1",
     "expo": "~41.0.1",
     "expo-status-bar": "~1.0.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
-    "react-native-web": "~0.13.12"
+    "react-native-web": "~0.13.12",
+    "safe-buffer": "^5.1.2",
+    "stream": "^0.0.2",
+    "url": "^0.11.0",
+    "woocommerce-api": "^1.5.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0"
