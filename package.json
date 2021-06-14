@@ -15,14 +15,19 @@
     "crypto": "^1.0.1",
     "expo": "~41.0.1",
     "expo-status-bar": "~1.0.4",
+    "hash-base": "^3.1.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
+    "react-native-elements": "^3.4.2",
+    "react-native-safe-area-context": "^3.2.0",
     "react-native-web": "~0.13.12",
+    "react-native-woocommerce-api": "^1.8.8",
     "safe-buffer": "^5.1.2",
     "stream": "^0.0.2",
     "url": "^0.11.0",
-    "woocommerce-api": "^1.5.0"
+    "woocommerce-api": "^1.5.0",
+    "wordpress-rest-api-oauth-1": "^1.1.7"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0"
