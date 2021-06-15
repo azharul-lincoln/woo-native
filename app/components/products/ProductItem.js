@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 import { Rating, AirbnbRating } from "react-native-elements";
+import ProductItemImage from "./ProductItemImage";
 
 function ProductItem({ title, imageSrc, price, imageBgColor }) {
   return (
@@ -24,30 +25,10 @@ function ProductItem({ title, imageSrc, price, imageBgColor }) {
       </View>
 
       {imageSrc && (
-        <View
-          style={{
-            backgroundColor: imageBgColor,
-            padding: 7,
-            borderRadius: 100,
-          }}
-        >
-          <View
-            style={{
-              backgroundColor: imageBgColor,
-              padding: 20,
-              borderRadius: 100,
-              borderColor: "#fff",
-              borderWidth: 2,
-            }}
-          >
-            <Image
-              style={styles.image}
-              source={{
-                uri: "https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11779430/2020/4/2/7460b201-74cb-4c71-9ecd-71b1b172272e1585816666577WalkstylebyELPasoMensWhiteAirSeriesKnittedMeshSportsRunningS1.jpg",
-              }}
-            />
-          </View>
-        </View>
+        <ProductItemImage
+          imageSrc="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11779430/2020/4/2/7460b201-74cb-4c71-9ecd-71b1b172272e1585816666577WalkstylebyELPasoMensWhiteAirSeriesKnittedMeshSportsRunningS1.jpg"
+          imageBgColor={imageBgColor}
+        />
       )}
       <Text style={styles.title}>{title}</Text>
       <View>
