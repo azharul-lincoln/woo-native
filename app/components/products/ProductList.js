@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { StyleSheet, Text, SafeAreaView, FlatList, View } from "react-native";
+import CategoryList from "../category/CategoryList";
 
 import Products from "./Data";
 import ProductItem from "./ProductItem";
@@ -25,7 +26,7 @@ function ProductList() {
     <View style={styles.container}>
       {products ? (
         <FlatList
-          style={{ marginHorizontal: 10 }}
+          style={{ marginHorizontal: 0 }}
           columnWrapperStyle={{ justifyContent: "space-between" }}
           data={products}
           numColumns="2"
@@ -51,7 +52,8 @@ function ProductList() {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#f7f7f7",
+    // backgroundColor: "#f7f7f7",
+    // paddingHorizontal: 10,
   },
 });
 

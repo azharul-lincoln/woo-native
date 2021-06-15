@@ -1,29 +1,21 @@
 import React, { useEffect, useState } from "react";
-import { StyleSheet, Text, SafeAreaView, FlatList, View } from "react-native";
-import { SafeAreaProvider } from "react-native-safe-area-context";
+import {
+  StyleSheet,
+  Text,
+  SafeAreaView,
+  FlatList,
+  View,
+  Button,
+} from "react-native";
 
-import ProductList from "./app/components/products/ProductList";
+import ProductScreen from "./app/screens/ProductScreen";
 
 export default function App() {
-  return (
-    <SafeAreaProvider style={styles.container}>
-      <ProductList />
-    </SafeAreaProvider>
-  );
+  return <ProductScreen />;
 }
 
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "#fff",
-    paddingTop: 80,
-  },
-  flatList: {
-    flex: 1,
-    marginVertical: 20,
-  },
-  catgoryList: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    justifyContent: "space-between",
   },
 });
