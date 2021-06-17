@@ -16,6 +16,7 @@ const styles = StyleSheet.create({
     paddingVertical: 6,
     paddingHorizontal: 15,
     borderRadius: 10,
+    elevation: 5,
   },
   image: {},
   title: {
