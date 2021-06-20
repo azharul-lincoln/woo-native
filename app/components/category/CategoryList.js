@@ -6,7 +6,6 @@ import CategoryItem from "./CategoryItem";
 
 function CategoryList(props) {
   const categories = useCatgoryStore((state) => state.categories);
-  console.log(categories);
 
   return (
     <View style={styles.container}>

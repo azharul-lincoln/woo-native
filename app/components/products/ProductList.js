@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { StyleSheet, Text, SafeAreaView, FlatList, View } from "react-native";
 import CategoryList from "../category/CategoryList";
+import { useProducts } from "../../store/products";
 
 import Products from "./Data";
 import ProductItem from "./ProductItem";
@@ -12,15 +13,7 @@ const randomBgColor = () => {
 };
 
 function ProductList() {
-  const [products, setProducts] = useState();
-
-  const fetchProducts = () => {
-    setProducts(Products);
-  };
-
-  useEffect(() => {
-    fetchProducts();
-  }, []);
+  const { products } = useProducts();
 
   return (
     <View style={styles.container}>

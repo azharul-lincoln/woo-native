@@ -25,10 +25,7 @@ function ProductItem({ title, imageSrc, price, imageBgColor }) {
       </View>
 
       {imageSrc && (
-        <ProductItemImage
-          imageSrc="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/11779430/2020/4/2/7460b201-74cb-4c71-9ecd-71b1b172272e1585816666577WalkstylebyELPasoMensWhiteAirSeriesKnittedMeshSportsRunningS1.jpg"
-          imageBgColor={imageBgColor}
-        />
+        <ProductItemImage imageSrc={imageSrc} imageBgColor={imageBgColor} />
       )}
       <Text style={styles.title}>{title}</Text>
       <View>
